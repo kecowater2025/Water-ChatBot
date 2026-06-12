@@ -1,8 +1,9 @@
+import ChatShell from "@/components/ChatShell";
+
 export default function Home() {
   return (
-    <main style={{ padding: "40px" }}>
-      <h1>부합성 심의제도 챗봇</h1>
-      <p>챗봇을 시작하려면 /chat 페이지로 이동하세요.</p>
+    <main className="flex min-h-dvh items-center justify-center bg-[#e9eef3] px-3 py-3 xl:px-6 xl:py-4">
+      <ChatShell />
     </main>
   );
 }
