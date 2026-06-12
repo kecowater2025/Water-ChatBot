@@ -1,0 +1,240 @@
+{
+  "plans": [
+    {
+      "id": "tmdl",
+      "name": "오염총량관리기본계획",
+      "owners": ["지자체"],
+      "result": {
+        "isTarget": true,
+        "committee": "유역물관리위원회",
+        "submitTiming": "환경부 승인 전",
+        "documents": [
+          "계획보고서(안)",
+          "부합성 심의요청서",
+          "계획요소 분류표",
+          "기타 필요한 자료"
+        ]
+      }
+    },
+    {
+      "id": "livestock",
+      "name": "가축분뇨관리기본계획",
+      "owners": ["지자체"],
+      "result": {
+        "isTarget": true,
+        "committee": "유역물관리위원회",
+        "submitTiming": "최종 승인 전",
+        "documents": [
+          "계획보고서(안)",
+          "부합성 심의요청서",
+          "계획요소 분류표",
+          "기타 필요한 자료"
+        ]
+      }
+    },
+    {
+      "id": "water_reuse",
+      "name": "물재이용관리계획",
+      "owners": ["지자체"],
+      "result": {
+        "isTarget": true,
+        "committee": "유역물관리위원회",
+        "submitTiming": "최종 승인 또는 확정 전",
+        "documents": [
+          "계획보고서(안)",
+          "부합성 심의요청서",
+          "계획요소 분류표",
+          "기타 필요한 자료"
+        ]
+      }
+    },
+    {
+      "id": "aquatic_ecology",
+      "name": "수생태계복원계획",
+      "owners": ["지자체"],
+      "result": {
+        "isTarget": true,
+        "committee": "유역물관리위원회",
+        "submitTiming": "최종 승인 또는 확정 전",
+        "documents": [
+          "계획보고서(안)",
+          "부합성 심의요청서",
+          "계획요소 분류표",
+          "기타 필요한 자료"
+        ]
+      }
+    },
+    {
+      "id": "small_stream_master",
+      "name": "소하천정비종합계획",
+      "owners": ["지자체"],
+      "result": {
+        "isTarget": true,
+        "committee": "유역물관리위원회",
+        "submitTiming": "광역소하천관리위원회 심의 상정 전",
+        "documents": [
+          "계획보고서(안)",
+          "부합성 심의요청서",
+          "계획요소 분류표",
+          "기타 참고자료"
+        ],
+        "notes": [
+          "광역소하천관리위원회 심의 전에 부합성 심의를 요청해야 합니다.",
+          "정확한 요청 시점은 유역지원팀과 사전 협의가 필요합니다."
+        ]
+      }
+    },
+    {
+      "id": "small_stream_midterm",
+      "name": "소하천정비중기계획",
+      "owners": ["지자체"],
+      "result": {
+        "isTarget": true,
+        "committee": "유역물관리위원회",
+        "submitTiming": "최종 승인 또는 확정 전",
+        "documents": [
+          "계획보고서(안)",
+          "부합성 심의요청서",
+          "계획요소 분류표",
+          "기타 참고자료"
+        ],
+        "notes": [
+          "기초소하천관리위원회 심의 전에 부합성 심의를 요청해야 합니다.",
+          "정확한 요청 시점은 유역지원팀과 사전 협의가 필요합니다."
+        ]
+      }
+    },
+    {
+      "id": "water_supply",
+      "name": "수도정비계획",
+      "owners": ["지자체"],
+      "result": {
+        "isTarget": true,
+        "committee": "유역물관리위원회",
+        "submitTiming": "최종 승인 전",
+        "documents": [
+          "계획보고서(안)",
+          "부합성 심의요청서",
+          "계획요소 분류표",
+          "기타 필요한 자료"
+        ]
+      }
+    },
+    {
+      "id": "water_demand",
+      "name": "물수요관리종합계획",
+      "owners": ["지자체"],
+      "result": {
+        "isTarget": true,
+        "committee": "유역물관리위원회",
+        "submitTiming": "최종 승인 또는 확정 전",
+        "documents": [
+          "계획보고서(안)",
+          "부합성 심의요청서",
+          "계획요소 분류표",
+          "기타 필요한 자료"
+        ]
+      }
+    },
+    {
+      "id": "source_water_quality",
+      "name": "상수원 수질관리계획",
+      "owners": ["지자체"],
+      "result": {
+        "isTarget": true,
+        "committee": "유역물관리위원회",
+        "submitTiming": "최종 승인 또는 확정 전",
+        "documents": [
+          "계획보고서(안)",
+          "부합성 심의요청서",
+          "계획요소 분류표",
+          "기타 필요한 자료"
+        ]
+      }
+    },
+    {
+      "id": "groundwater_local",
+      "name": "지역지하수관리계획",
+      "owners": ["지자체"],
+      "result": {
+        "isTarget": true,
+        "committee": "유역물관리위원회",
+        "submitTiming": "최종 승인 또는 확정 전",
+        "documents": [
+          "계획보고서(안)",
+          "부합성 심의요청서",
+          "계획요소 분류표",
+          "기타 필요한 자료"
+        ]
+      }
+    },
+    {
+      "id": "regional_water",
+      "name": "지역수자원관리계획",
+      "owners": ["지자체"],
+      "result": {
+        "isTarget": true,
+        "committee": "유역물관리위원회",
+        "submitTiming": "지역수자원관리위원회 심의 상정 전",
+        "documents": [
+          "계획보고서(안)",
+          "부합성 심의요청서",
+          "계획요소 분류표",
+          "기타 필요한 자료"
+        ],
+        "notes": [
+          "지역수자원관리위원회 심의 상정 전에 부합성 심의를 요청해야 합니다.",
+          "정확한 요청 시점은 유역지원팀과 사전 협의가 필요합니다."
+        ]
+      }
+    },
+    {
+      "id": "sewer",
+      "name": "하수도정비기본계획",
+      "owners": ["지자체"],
+      "result": {
+        "isTarget": true,
+        "committee": "유역물관리위원회",
+        "submitTiming": "최종 승인 전",
+        "documents": [
+          "계획보고서(안)",
+          "부합성 심의요청서",
+          "계획요소 분류표",
+          "기타 필요한 자료"
+        ]
+      }
+    },
+    {
+      "id": "water_industry",
+      "name": "물관리기술발전 및 물산업진흥시행계획",
+      "owners": ["지자체", "중앙부처"],
+      "result": {
+        "isTarget": true,
+        "committee": "유역물관리위원회",
+        "submitTiming": "최종 승인 또는 확정 전",
+        "documents": [
+          "계획보고서(안)",
+          "부합성 심의요청서",
+          "계획요소 분류표",
+          "기타 필요한 자료"
+        ]
+      }
+    },
+    {
+      "id": "local_erosion_control",
+      "name": "지역사방사업계획",
+      "owners": ["지자체"],
+      "result": {
+        "isTarget": true,
+        "committee": "유역물관리위원회",
+        "submitTiming": "최종 승인 또는 확정 전",
+        "documents": [
+          "계획보고서(안)",
+          "부합성 심의요청서",
+          "계획요소 분류표",
+          "기타 필요한 자료"
+        ]
+      }
+    }
+  ]
+}
