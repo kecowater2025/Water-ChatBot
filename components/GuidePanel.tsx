@@ -1,6 +1,6 @@
 "use client";
 
-import GuideFlow from "./GuideFlow";
+import BasinExampleGuide from "./BasinExampleGuide";
 
 export default function GuidePanel({
   isOpen,
@@ -18,10 +18,10 @@ export default function GuidePanel({
       <div className="flex shrink-0 items-center justify-between border-b border-slate-200 bg-[#f8fafc] px-5 py-4">
         <div>
           <div className="text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400">
-            Review Workspace
+            Request Examples
           </div>
           <div className="mt-1 text-base font-bold text-slate-900">
-            심의요청서 검토 작업 패널
+            유역별 심의요청서 작성예시
           </div>
         </div>
 
@@ -39,7 +39,7 @@ export default function GuidePanel({
       </div>
 
       <div className="min-h-0 flex-1 overflow-y-auto bg-[#f3f6fb] p-4">
-        <GuideFlow />
+        <BasinExampleGuide />
       </div>
     </aside>
   );
