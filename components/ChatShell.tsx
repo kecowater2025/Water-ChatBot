@@ -151,7 +151,7 @@ const customMenus = [
   { id: "intro", label: "제도 소개", type: "action", icon: "info" },
   { id: "faq_group", label: "자주 묻는 질문", type: "toggle", icon: "faq" },
   { id: "diagnosis", label: "대상계획별 안내사항", type: "action", icon: "plan" },
-  { id: "guide", label: "심의요청서 작성 가이드", type: "panel", icon: "guide" },
+  { id: "guide", label: "유역별 작성예시", type: "panel", icon: "guide" },
   { id: "forms", label: "서식 다운로드", type: "link", icon: "download" },
   { id: "contact_info", label: "문의처", type: "action", icon: "contact" }
 ] as const;
