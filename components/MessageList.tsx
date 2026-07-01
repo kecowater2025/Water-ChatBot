@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import AnswerCard from "./AnswerCard";
 import DiagnosisFlow from "./DiagnosisFlow";
 import DiagnosisResultCard from "./DiagnosisResultCard";
@@ -17,6 +17,20 @@ function formatTime() {
   const period = hours < 12 ? "오전" : "오후";
   const displayHour = hours % 12 || 12;
   return `${period} ${displayHour}:${minutes}`;
+}
+
+function MessageTime({ align = "left" }: { align?: "left" | "right" }) {
+  const [time, setTime] = useState("");
+
+  useEffect(() => {
+    setTime(formatTime());
+  }, []);
+
+  return (
+    <div className={`mt-1 text-[11px] text-slate-500 ${align === "right" ? "text-right" : ""}`}>
+      {time}
+    </div>
+  );
 }
 
 export default function MessageList({
@@ -45,7 +59,7 @@ export default function MessageList({
         block: "end"
       });
     }
-  }, [messages]);
+  }, [messages, exportMode]);
 
   return (
     <div
@@ -65,9 +79,7 @@ export default function MessageList({
                   <div className="rounded-2xl rounded-br-md bg-[#5f6fd8] px-4 py-2.5 text-sm font-medium leading-7 text-white shadow-[0_8px_20px_rgba(95,111,216,0.22)]">
                     {message.content}
                   </div>
-                  <div className="mt-1 text-right text-[11px] text-slate-500">
-                    {formatTime()}
-                  </div>
+                  <MessageTime align="right" />
                 </div>
               </div>
             );
@@ -88,9 +100,7 @@ export default function MessageList({
                       <div key={index}>{line === "" ? <div className="h-2" /> : line}</div>
                     ))}
                   </div>
-                  <div className="mt-1 text-[11px] text-slate-500">
-                    {formatTime()}
-                  </div>
+                  <MessageTime />
                 </div>
               </div>
             );
@@ -106,9 +116,7 @@ export default function MessageList({
                 />
                 <div className="max-w-[86%]">
                   <AnswerCard data={message.content} />
-                  <div className="mt-1 text-[11px] text-slate-500">
-                    {formatTime()}
-                  </div>
+                  <MessageTime />
                 </div>
               </div>
             );
@@ -124,9 +132,7 @@ export default function MessageList({
                 />
                 <div className="max-w-[86%]">
                   <ProcessFlowCard />
-                  <div className="mt-1 text-[11px] text-slate-500">
-                    {formatTime()}
-                  </div>
+                  <MessageTime />
                 </div>
               </div>
             );
@@ -144,9 +150,7 @@ export default function MessageList({
                   <DiagnosisFlow
                     onComplete={message.onComplete as (result: DiagnosisResultData) => void}
                   />
-                  <div className="mt-1 text-[11px] text-slate-500">
-                    {formatTime()}
-                  </div>
+                  <MessageTime />
                 </div>
               </div>
             );
@@ -162,9 +166,7 @@ export default function MessageList({
                 />
                 <div className="max-w-[86%]">
                   <DiagnosisResultCard data={message.content} />
-                  <div className="mt-1 text-[11px] text-slate-500">
-                    {formatTime()}
-                  </div>
+                  <MessageTime />
                 </div>
               </div>
             );
