@@ -3,12 +3,12 @@ import { AnswerCardData, AnswerItem } from "@/lib/chat/types";
 function renderAnswerItem(item: AnswerItem, index: number) {
   if (typeof item === "string") {
     return (
-      <span
+      <div
         key={index}
         className="text-sm leading-7 text-slate-700"
       >
         {item}
-      </span>
+      </div>
     );
   }
 
@@ -35,9 +35,9 @@ function renderAnswerItem(item: AnswerItem, index: number) {
   }
 
   return (
-    <span key={index}>
+    <div key={index}>
       <span className={textClass}>{item.text}</span>
-    </span>
+    </div>
   );
 }
 
@@ -71,7 +71,7 @@ export default function AnswerCard({ data }: { data: AnswerCardData }) {
               {section.label}
             </div>
 
-            <div className="flex flex-wrap items-center gap-x-1 gap-y-1">
+            <div className="space-y-2">
               {section.items.map((item, index) =>
                 renderAnswerItem(item, index)
               )}
